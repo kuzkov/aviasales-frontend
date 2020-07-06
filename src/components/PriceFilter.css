@@ -1,0 +1,36 @@
+.PriceFilter-form {
+	max-width: 500px;
+	background: white;
+	border: 1px solid #DFE5EC;
+	box-sizing: border-box;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.PriceFilter-form input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+
+.PriceFilter-button {
+	display: inline-block;
+
+	padding: 15px 0;
+	width: 50%;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 20px;
+
+	user-select: none;
+	cursor: pointer;
+}
+
+.PriceFilter-button:hover {
+	background: #F1FCFF;
+}
+
+.PriceFilter-form input:checked ~ span {
+	color: white;
+	background: #2196F3;
+}

@@ -1,0 +1,11 @@
+.Row-label {
+	color: #A0B0B9;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.Row-value {
+	font-size: 14px;
+	color: #4A4A4A;
+	line-height: 21px;
+}
