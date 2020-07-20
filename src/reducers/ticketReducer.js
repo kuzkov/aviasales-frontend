@@ -7,6 +7,11 @@ import {
 	SORT_BY_DURATION
 } from './ticketFilters'
 
+// FOR DEBUG
+import {
+	tickets
+} from "../tickets.json"
+
 function makeComparator(filter) {
 	switch(filter) {
 		case SORT_BY_PRICE:
@@ -30,7 +35,7 @@ function makeComparator(filter) {
 	}
 }
 
-function ticketReducer(state = [], action) {
+function ticketReducer(state = tickets, action) {
 	switch(action.type) {
 		case SORT_TICKETS:
 			return state.slice().sort(makeComparator(action.filter))

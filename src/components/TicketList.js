@@ -8,6 +8,7 @@ import {
 
 import {
 	fetchTickets,
+	receiveTickets,
 
 	FILTER_ALL,
 	FILTER_WITHOUT_STOPS,
@@ -22,7 +23,7 @@ function contains(array, element) {
 	return array.indexOf(element) !== -1
 }
 
-function TicketList() {
+function TicketList({ ticketsPerPage }) {
 	const tickets = useSelector(state => state.tickets)
 	const filter = useSelector(state => state.stopsFilter)
 
@@ -59,6 +60,7 @@ function TicketList() {
 		<div className="TicketList">
 			{
 				tickets
+					.slice(0, 5)
 					.filter(filterTickets)
 					.map((ticket, index) =>
 						<Ticket key={index} {...ticket}/>

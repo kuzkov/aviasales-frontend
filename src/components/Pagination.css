@@ -1,0 +1,10 @@
+.Pagination-container {
+	display: flex;
+	margin-top: 10px;
+}
+
+.Pagination-item {
+	font-size: 14px;
+	padding: 10px;
+	cursor: pointer;
+}
