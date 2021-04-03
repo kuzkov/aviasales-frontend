@@ -1,3 +1,7 @@
+# Aviasales test project
+
+![Снимок экрана 2021-04-03 в 21 11 47](https://user-images.githubusercontent.com/58119305/113487542-64763700-94c1-11eb-8e2a-76df3d6704e8.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
